@@ -1,0 +1,7 @@
+False
+3f74ff63-0212-4e58-b399-74d07b9a7e51ba05d8bd-bbc8-45a5-a6c3-3b9a563ff95c
+{2b5cca8e-e0d9-4e93-9534-2d4ce4726db5}{ec367118-fad6-4e99-8b19-a561b2650372}
+{235ac1ed-d60b-4e81-877e-7b3c14f5a1f2}
+1.0.0.0
+MyGroupsPython.Office
+_layouts/15/

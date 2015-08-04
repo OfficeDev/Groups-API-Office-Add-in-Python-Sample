@@ -1,0 +1,16 @@
+DELETION
+models
+unicode_literals
+reverse
+LogEntry
+NoReverseMatch
+ContentType
+LogEntryManager
+settings
+_
+ugettext
+CHANGE
+quote
+ADDITION
+python_2_unicode_compatible
+smart_text

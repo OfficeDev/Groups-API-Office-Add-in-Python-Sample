@@ -1,0 +1,12 @@
+BadCommand
+UnsupportedWheel
+PipError
+absolute_import
+PreviousBuildDirError
+InstallationError
+BestVersionAlreadyInstalled
+DistributionNotFound
+CommandError
+UninstallationError
+InvalidWheelFilename
+HashMismatch

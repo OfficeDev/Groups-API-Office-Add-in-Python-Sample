@@ -1,0 +1,10 @@
+default_etree
+moduleFactoryFactory
+MethodDispatcher
+absolute_import
+unicode_literals
+ModuleType
+division
+surrogatePairToCodepoint
+__all__
+isSurrogatePair

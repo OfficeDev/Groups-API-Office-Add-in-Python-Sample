@@ -1,0 +1,5 @@
+Command
+warnings
+unicode_literals
+RemovedInDjango19Warning
+CheckCommand

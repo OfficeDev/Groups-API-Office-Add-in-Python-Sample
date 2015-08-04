@@ -1,0 +1,15 @@
+module_has_submodule
+copy
+six
+os
+absolute_import
+importlib_find
+import_module
+warnings
+autodiscover_modules
+import_string
+import_by_path
+imp
+RemovedInDjango19Warning
+sys
+ImproperlyConfigured

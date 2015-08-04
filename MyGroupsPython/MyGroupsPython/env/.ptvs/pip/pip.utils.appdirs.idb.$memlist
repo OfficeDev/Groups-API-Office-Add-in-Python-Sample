@@ -1,0 +1,16 @@
+user_config_dir
+user_cache_dir
+site_config_dirs
+ctypes
+os
+six
+user_log_dir
+_get_win_folder
+WINDOWS
+absolute_import
+user_data_dir
+_get_win_folder_with_pywin32
+_get_win_folder_from_registry
+win32com
+_get_win_folder_with_ctypes
+sys

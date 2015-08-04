@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/app/content/bootstrap.min.css" />
+    <script src="/static/app/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/app/scripts/bootstrap.js"></script>
+    {% if isAddin %}
+    <script src="//appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script type="text/javascript">
+        //we must initialize Office on each page
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+            });
+        }
+    </script>
+    {% endif %}
+    <script type="text/javascript">
+        function login() {
+            window.location = "{{ redirect }}";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header page-header-inverted">
+            <h1>My Modern Groups</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Login Required</h3>
+                        <p>My Modern Groups is a web application that queries Office 365 to display the modern groups you are a member of. To query Office 365, you must first login with Office 365 credientals and then grant this application access to query group data.</p>
+                        <button type="button" name="button" onclick="login()" class="btn btn-primary btn-block">Login with Office 365</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    

@@ -1,0 +1,12 @@
+make_context
+Context
+absolute_import
+warnings
+Template
+RequestContext
+RemovedInDjango110Warning
+Engine
+DjangoTemplates
+BaseEngine
+_dirs_undefined
+settings

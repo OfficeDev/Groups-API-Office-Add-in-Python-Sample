@@ -1,0 +1,17 @@
+sys
+logging
+dictConfig
+types
+IDENTIFIER
+re
+_checkLevel
+six
+RemovedInDjango19Warning
+ConvertingDict
+ConvertingList
+ConvertingTuple
+BaseConfigurator
+warnings
+valid_ident
+DictConfigurator
+dictConfigClass

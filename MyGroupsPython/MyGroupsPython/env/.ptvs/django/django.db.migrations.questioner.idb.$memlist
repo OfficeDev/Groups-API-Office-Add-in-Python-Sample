@@ -1,0 +1,14 @@
+input
+print_function
+six
+os
+unicode_literals
+InteractiveMigrationQuestioner
+MigrationQuestioner
+timezone
+importlib
+datetime_safe
+apps
+MIGRATIONS_MODULE_NAME
+sys
+NOT_PROVIDED

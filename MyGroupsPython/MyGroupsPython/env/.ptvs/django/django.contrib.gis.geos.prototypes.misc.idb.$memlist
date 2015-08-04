@@ -1,0 +1,15 @@
+geos_isvalidreason
+GEOM_PTR
+range
+dbl_from_geom
+__all__
+geos_length
+check_string
+check_dbl
+geos_distance
+POINTER
+GEOSFunc
+geos_char_p
+geos_area
+c_int
+c_double

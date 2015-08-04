@@ -1,0 +1,15 @@
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\bin\Microsoft.PythonTools.WebRole.dll
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\attach_server.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\visualstudio_py_debugger.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\visualstudio_py_repl.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\visualstudio_py_util.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\__init__.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\__main__.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\bin\AzureSetup.cfg
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\bin\wfastcgi.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\deployment-updated-pyvenv.cfg
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\ptvs_virtualenv_proxy.py
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\web.config
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython\obj\Debug\web.debug.config

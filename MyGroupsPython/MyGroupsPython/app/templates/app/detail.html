@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/app/content/bootstrap.min.css" />
+    <script src="/static/app/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/app/scripts/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header page-header-inverted">
+            <h1><a href="/">My Modern Groups</a></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Title</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for member in members %}
+                        <tr>
+                            <td>{{ member.displayName }}</td>
+                            <td><a href="mailto:{{ member.mail }}">{{ member.mail }}</a></td>
+                            <td>{{ member.jobTitle }}</td>
+                            <td>{{ member.department }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    

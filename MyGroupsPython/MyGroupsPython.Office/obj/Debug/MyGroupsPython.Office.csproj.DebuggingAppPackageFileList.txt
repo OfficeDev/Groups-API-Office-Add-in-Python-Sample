@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\MyGroupsPython.OfficeManifest.xml
+C:\Projects\Office365\MyGroupsPython\MyGroupsPython.Office\bin\Debug\MyGroupsPython.Office.debugapp

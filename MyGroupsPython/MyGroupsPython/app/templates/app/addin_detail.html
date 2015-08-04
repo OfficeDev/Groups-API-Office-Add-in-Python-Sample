@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/app/content/bootstrap.min.css" />
+    <script src="/static/app/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/app/scripts/bootstrap.js"></script>
+    <script src="//appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script type="text/javascript">
+        //we must initialize Office on each page
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+                var data = JSON.parse(excelData.replace(/&quot;/g, "\""));
+                var officeTable = new Office.TableData();
+
+                //build headers
+                var headers = new Array("Name", "Email", "Job Title", "Department");
+                officeTable.headers = headers;
+
+                //add data
+                for (var i = 0; i < data.value.length; i++)
+                    officeTable.rows.push([data.value[i].displayName,
+                        data.value[i].mail,
+                        data.value[i].jobTitle,
+                        data.value[i].department]);
+
+                //add the table to Excel
+                Office.context.document.setSelectedDataAsync(officeTable, { coercionType: Office.CoercionType.Table }, function (asyncResult) {
+                    //check for error
+                    if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                        $("#error").show();
+                    }
+                    else {
+                        $("#success").show();
+                    }
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header page-header-inverted">
+            <h1><a href="/addin/groups">My Modern Groups</a></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="alert alert-success" role="alert" style="display:none;" id="success">
+                    SUCCESS: Update to Excel succeeded!
+                </div>
+                <div class="alert alert-danger" role="alert" style="display:none;" id="error">
+                    ERROR: Update to Excel failed!
+                </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Group Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for group in groups %}
+                        <tr>
+                            <td><a href="/addin/groups/{{group.objectId}}/?root={{ apiroot }}">{{ group.displayName }}</a></td>
+                            <td><a href="mailto:{{ group.EmailAddress }}">{{ group.EmailAddress }}</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var excelData = "{{members}}";
+    </script>
+</body>
+</html>
+
+    
