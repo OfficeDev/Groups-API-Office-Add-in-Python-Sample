@@ -1,6 +1,8 @@
 # Groups-API-Office-Add-in-Python-Sample
 This repository contains a Python/Django code sample that connects to the Office 365 Groups API as both a stand-alone web application and from within an Office add-in.
 
+For a video introduction to the sample, see "Office Dev Show - Episode 7 - Getting Started with Python | Office Dev Show | Channel 9" at https://channel9.msdn.com/Shows/Office-Dev-Show/Office-Dev-Show-Episode-7-Getting-Started-with-Python
+
 ## Environment Setup ##
 Python developers have several development environments to choose from. This project was built in Visual Studio 2015 with the Python tools for Visual Studio. These tools have been available for a while and come as an installation option in Visual Studio 2015. If you are using something other than Visual Studio, you can certainly export the individual files and re-leverage them in a different IDE.
 
