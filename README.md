@@ -4,7 +4,7 @@ This repository contains a Python/Django code sample that connects to the Office
 ## Environment Setup ##
 Python developers have several development environments to choose from. This project was built in Visual Studio 2015 with the Python tools for Visual Studio. These tools have been available for a while and come as an installation option in Visual Studio 2015. If you are using something other than Visual Studio, you can certainly export the individual files and re-leverage them in a different IDE.
 
-Office 365 applications are secured by Azure Active Directory, which comes as part of an Office 365 subscription. If you do not have an Office 365 Subscription or associated it with Azure AD, then you should follow the steps to [Set up your Office 365 development environment](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment "Set up your Office 365 development environment") from MSDN.
+Office 365 applications are secured by Azure Active Directory, which comes as part of an Office 365 subscription. If you do not have an Office 365 Subscription or associated it with Azure AD, [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup), then follow the steps to [Set up your Office 365 development environment](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment "Set up your Office 365 development environment") from MSDN. 
 
 ## Registering the App ##
 The first step in developing an application that connects to Office 365 is registering an application with Azure AD.
