@@ -62,8 +62,11 @@ The solution contains and Office Add-in project (MyPythonGroups.Office), which c
 1. Open the MyGroupsPython.Office.xml file (located in the MyPythonGroups.Office project) and update the DefaultValue attribute of the SourceLocation element to the location you are running the Python website (default is http://localhost:8888/addin/groups). You must point to the addin/groups view to have Python include the Office.js scripts it needs to interact with Excel:
 
     	<SourceLocation DefaultValue="http://localhost:8888/addin/groups" />
+2. Use exactly the same value for the DefaultValue attribute of the "<bt:Url id="Contoso.Taskpane.Url" element further down in the file.
 
-2. Save the changes to the MyGroupsPython.Office.xml and start debugging. Excel will likely launch before the website is running:
+    	<bt:Url id="Contoso.Taskpane.Url DefaultValue="http://localhost:8888/addin/groups" />
+2. Save the changes to the MyGroupsPython.Office.xml and press F5. This will start the server and launch Excel.
+3. On the **Home** ribbon, press the **Open** button in the **Groups API** group (not shown in the screen shots below). The task pane may launch before the website is running:
 ![Failed to load](http://i.imgur.com/3d9G8ab.png)
 3. Click the Retry button once the website has started and the add-in should load correctly:
 ![Success add-in](http://i.imgur.com/rZvDOJ3.png)
