@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  - Azure AD
+  createdDate: 8/3/2015 12:14:24 PM
+---
 # Groups-API-Office-Add-in-Python-Sample
 This repository contains a Python/Django code sample that connects to the Office 365 Groups API as both a stand-alone web application and from within an Office add-in.
 
